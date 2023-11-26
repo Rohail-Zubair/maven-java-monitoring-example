@@ -21,3 +21,4 @@ COPY --from=build /usr/src/app/target/*.jar $HOME/artifacts/app.jar
 USER 1001
 
 ENTRYPOINT exec java $JAVA_OPTS -jar artifacts/app.jar
+
